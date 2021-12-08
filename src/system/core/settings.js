@@ -316,6 +316,16 @@ export default function registerSettings() {
 		onChange: debouncedReload,
 	});
 
+	game.settings.register("forbidden-lands", "darkmode", {
+		name: "SETTINGS.DARKMODE",
+		hint: "SETTINGS.DARKMODE_HINT",
+		scope: "client",
+		config: true,
+		default: false,
+		onChange: debouncedReload,
+		type: Boolean,
+	});
+
 	game.settings.register("forbidden-lands", "alternativeSkulls", {
 		name: "CONFIG.ALTERNATIVESKULLS",
 		hint: "CONFIG.ALTERNATIVESKULLS_DESC",
