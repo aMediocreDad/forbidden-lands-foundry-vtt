@@ -41,6 +41,15 @@ export default function registerSettings() {
 		default: [],
 		type: Array,
 	});
+	game.settings.register("forbidden-lands", "darkmode", {
+		name: "SETTINGS.DARKMODE",
+		hint: "SETTINGS.DARKMODE_HINT",
+		scope: "client",
+		config: true,
+		default: false,
+		onChange: debouncedReload,
+		type: Boolean,
+	});
 	game.settings.register("forbidden-lands", "allowUnlimitedPush", {
 		name: "FLPS.SETTINGS.ALLOW_PUSH",
 		hint: "FLPS.SETTINGS.ALLOW_PUSH_HINT",
