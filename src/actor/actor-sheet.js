@@ -326,7 +326,7 @@ export class ForbiddenLandsActorSheet extends ActorSheet {
 	}
 
 	rollArmor() {
-		const rollName = `${localizeString("ITEM.TypeArmor")}: ${localizeString("ARMOR.TOTAL")}`;
+		const rollName = `${localizeString("TYPES.Item.armor")}: ${localizeString("ARMOR.TOTAL")}`;
 		const identifiers = ["armor"];
 		const artifactDies = [];
 		const totalArmor = this.actor.itemTypes.armor.reduce((sum, armor) => {
@@ -343,8 +343,8 @@ export class ForbiddenLandsActorSheet extends ActorSheet {
 		const data = {
 			title: rollName,
 			gear: {
-				label: localizeString("ITEM.TypeArmor"),
-				name: localizeString("ITEM.TypeArmor"),
+				label: localizeString("TYPES.Item.armor"),
+				name: localizeString("TYPES.Item.armor"),
 				value: totalArmor,
 				artifactDie: artifactDies.join("+"),
 			},
@@ -359,7 +359,7 @@ export class ForbiddenLandsActorSheet extends ActorSheet {
 
 	rollSpecificArmor(armorId) {
 		const rollData = this.actor.items.get(armorId).getRollData();
-		const rollName = `${localizeString("ITEM.TypeArmor")}: ${rollData.name}`;
+		const rollName = `${localizeString("TYPES.Item.armor")}: ${rollData.name}`;
 		if (rollData.isBroken) throw this.broken("item");
 
 		const data = {

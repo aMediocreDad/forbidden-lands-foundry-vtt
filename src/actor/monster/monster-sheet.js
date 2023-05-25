@@ -90,7 +90,7 @@ export class ForbiddenLandsMonsterSheet extends ForbiddenLandsActorSheet {
 	/* Override Actor Roll */
 	async rollArmor() {
 		const armor = this.actorProperties.armor;
-		const rollName = `${localizeString("ITEM.TypeArmor")}: ${this.actor.name}`;
+		const rollName = `${localizeString("TYPES.Item.armor")}: ${this.actor.name}`;
 		const options = {
 			name: rollName,
 			maxPush: "0",
