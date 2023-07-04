@@ -1,17 +1,52 @@
-.sword {
-	font-family: "Swordlings" !important;
-	line-height: 1;
-	align-self: center;
-	font-weight: 700;
+.skullz {
+	font-family: Skullz;
+	font-size: 1.3em;
+	line-height: 1em;
+	height: 1em;
+	transform: translateY(0.2em);
+	margin: 0 0.2rem 0 0;
+	display: block;
+	font-weight: 400;
 }
 
-.skullz {
-	font-family: "Skullz" !important;
-	font-size: 1.6em;
-	line-height: 1rem;
-	font-weight: 400;
-	position: relative;
-	top: 0.2em;
-	align-self: center;
-	margin-inline-end: -0.27em;
+.sword {
+	font-family: Swordlings;
+	font-size: 0.8em;
+	margin: 0 0.2rem;
+	display: block;
+	font-weight: 600;
+}
+
+.special-number {
+	line-height: 1.2rem;
+	display: block;
+}
+
+.fbl-button {
+	font-weight: 600;
+	border: 2px solid var(--color-border);
+	box-shadow: 0 0 5px transparent;
+	width: max(2em, 60%);
+	display: block;
+	margin: 0 auto;
+	border-radius: 6px;
+	transition: transform 80ms ease-in-out, box-shadow 80ms ease-in-out;
+
+	&:hover,
+	&:focus {
+		box-shadow: 0 0 5px #a00404;
+		border: 2px solid #a00404;
+	}
+
+	&:active {
+		transform: scale(0.96);
+	}
+}
+
+.chat-flavor {
+	font-size: var(--font-size-14);
+	display: block;
+	text-align: center;
+	font-style: italic;
+	font-weight: bold;
 }

@@ -60,6 +60,9 @@ Hooks.once("init", () => {
 	initializeEditorEnrichers();
 	registerFonts();
 	modifyConfig();
+	if (game.settings.get("forbidden-lands", "darkmode")) {
+		$("body").addClass("darkmode");
+	}
 });
 
 Hooks.once("ready", () => {

@@ -1,47 +1,25 @@
 .directory .directory-header .header-search input {
-	background: unset;
-}
+	background: transparent;
+	color: var(--color-theme-background);
 
-.app.sidebar-popout .window-content {
-	color: unset;
-}
-
-#sidebar-tabs > .collapse {
-	font-size: var(--font-size-20);
-	color: var(--color-text-dark-primary);
-
-	&:hover {
-		color: var(--color-theme-alt-600);
-	}
-}
-
-li.folder > .folder-header h3 {
-	color: var(--color-text-dark-primary);
-}
-
-li.folder > .folder-header .create-folder,
-li.folder > .folder-header .create-document {
-	&:hover {
-		color: var(--color-theme-alt-600);
-	}
-}
-
-li.folder.collapsed > .folder-header {
-	background: var(--color-theme-gray-200);
-}
-
-#chat-form textarea {
-	background: unset;
-}
-
-.directory .directory-list li.directory-item.document {
-	&:hover,
-	&:focus-visible {
-		background-color: var(--color-theme-gray-200);
-		cursor: pointer;
-	}
-	a:hover {
-		color: unset;
-		text-shadow: unset;
+	&::-webkit-search-cancel-button {
+		background: linear-gradient(
+				45deg,
+				rgba(0, 0, 0, 0) 0%,
+				rgba(0, 0, 0, 0) 43%,
+				var(--color-theme-gray-200) 45%,
+				var(--color-theme-gray-200) 55%,
+				rgba(0, 0, 0, 0) 57%,
+				rgba(0, 0, 0, 0) 100%
+			),
+			linear-gradient(
+				135deg,
+				transparent 0%,
+				transparent 43%,
+				var(--color-theme-gray-200) 45%,
+				var(--color-theme-gray-200) 55%,
+				transparent 57%,
+				transparent 100%
+			);
 	}
 }
