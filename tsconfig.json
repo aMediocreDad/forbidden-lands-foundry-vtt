@@ -1,10 +1,15 @@
 // @ts-nocheck
 {
 	"compilerOptions": {
-		"module": "Node16",
+		"strict": true,
+		"noEmit": true,
+		"module": "ESNext",
 		"target": "ESNext",
-		"moduleResolution": "Node16",
-		"types": ["@league-of-foundry-developers/foundry-vtt-types", "@types/jquery"],
+		"moduleResolution": "Node",
+		"allowJs": true,
+		"types": ["@types/jquery"],
+		"lib": ["ESNext", "DOM"],
+		"skipLibCheck": true,
 		"baseUrl": ".",
 		"paths": {
 			"*": ["./src"],
@@ -16,6 +21,6 @@
 			"@system/*": ["./src/system/*"]
 		}
 	},
-	"include": ["src/**/*.js"],
+	"include": ["src/**/*"],
 	"exclude": ["node_modules/*", "**/node_modules/*", "dist/*"]
 }

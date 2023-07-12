@@ -14,6 +14,11 @@ npm-debug.log
 # Local configuration
 foundryconfig.json
 
+# Foundry typesource
+src/types/commons.d.ts
+src/types/foundry.d.ts
+src/types/prosemirror.d.ts
+
 # Distribution files
 /dist
 
