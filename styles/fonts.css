@@ -1,0 +1,69 @@
+@font-face {
+	font-family: "IM Fell DW Pica";
+	src: url("../fonts/imfe-dprm.otf");
+}
+
+@font-face {
+	font-family: "IM Fell DW Pica";
+	src: url("../fonts/imfe-dpit.otf");
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "IM Fell DW Pica SC";
+	src: url("../fonts/imfe-dwpscr.ttf");
+}
+
+@font-face {
+	font-family: "IM Fell Three Line Pica";
+	src: url("../fonts/imfe-tlrm.otf");
+}
+
+@font-face {
+	font-family: "IM Fell Great Primer";
+	src: url("../fonts/imfe-gprm.otf");
+}
+
+@font-face {
+	font-family: "IM Fell Great Primer";
+	src: url("../fonts/imfe-gpit.otf");
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Author";
+	size-adjust: 110%;
+	src: url("../fonts/author-medium.otf");
+}
+
+@font-face {
+	font-family: "Author";
+	font-weight: bold;
+	size-adjust: 110%;
+	src: url("../fonts/author-semibold.otf");
+}
+
+@font-face {
+	font-family: "Author";
+	font-style: italic;
+	size-adjust: 110%;
+	src: url("../fonts/author-medium-italic.otf");
+}
+
+@font-face {
+	font-family: "Author";
+	font-style: italic;
+	font-weight: bold;
+	size-adjust: 110%;
+	src: url("../fonts/author-semibold-italic.otf");
+}
+
+@font-face {
+	font-family: "skullz";
+	src: url("../fonts/skullz.ttf");
+}
+
+@font-face {
+	font-family: "Swordlings";
+	src: url("../fonts/swordlings.ttf");
+}

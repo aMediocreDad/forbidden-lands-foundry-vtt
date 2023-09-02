@@ -6,5 +6,8 @@
 	"editor.defaultFormatter": "rome.rome",
 	"[javascript]": {
 		"editor.defaultFormatter": "rome.rome"
+	},
+	"[css]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	}
 }

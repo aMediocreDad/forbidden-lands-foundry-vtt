@@ -1,0 +1,30 @@
+/* Custom Button */
+button,
+form button,
+.dark button {
+	background: var(--color-theme-gray-200);
+	color: var(--color-theme-gray-800);
+}
+
+/* Window border */
+.app.window-app {
+	border: 2px solid transparent;
+	border-image: url(../assets/journal-art/box-border-large-alt.webp) 110/11
+		repeat;
+	border-image-outset: 3;
+	background: var(--color-theme-background);
+
+	.window-content {
+		background: var(--color-theme-background);
+	}
+}
+
+/* Forbidden Lands logo causes shadows to clip if the controls aren't moved down */
+#controls ol.control-tools {
+	padding-top: 8px;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar-thumb {
+	background: var(--color-theme-alt-800);
+}

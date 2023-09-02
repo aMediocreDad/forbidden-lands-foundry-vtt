@@ -1,6 +1,9 @@
-@forward "variables";
-
+/* Experimental Dark Mode */
 html.dark {
+	--color-theme-background: #222020;
+	--color-theme-contrast: var(--color-theme-gray-800);
+	--color-theme-text: #fff;
+
 	#sidebar,
 	#hotbar #hotbar-directory-controls,
 	#hotbar #action-bar,
@@ -16,17 +19,17 @@ html.dark {
 		border-image-source: url(./assets/journal-art/box-border-large-dark.webp);
 	}
 
-	button {
+	& button {
 		background: var(--color-theme-gray-800);
 		color: var(--color-theme-gray-200);
 	}
 
-	input[type="text"],
-	input[type="number"],
-	input[type="password"],
-	input[type="date"],
-	input[type="time"],
-	input[type="search"] {
+	& input[type="text"],
+	& input[type="number"],
+	& input[type="password"],
+	& input[type="date"],
+	& input[type="time"],
+	& input[type="search"] {
 		color: #111;
 	}
 
@@ -34,8 +37,8 @@ html.dark {
 		color: var(--color-theme-text);
 	}
 
-	form .notes,
-	form .hint {
+	& form .notes,
+	& form .hint {
 		color: var(--color-theme-gray-200);
 	}
 
@@ -65,15 +68,4 @@ html.dark {
 	.prosemirror menu .pm-dropdown {
 		background: var(--color-theme-contrast);
 	}
-}
-
-button,
-form button,
-.dark button {
-	background: var(--color-theme-gray-200);
-	color: var(--color-theme-gray-800);
-}
-
-.window-app .window-content {
-	background-image: none;
 }

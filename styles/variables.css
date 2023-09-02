@@ -1,0 +1,22 @@
+:root {
+	--color-theme-text: #fff;
+	--color-theme-background: #944352;
+	--color-theme-contrast: #e6e6e6;
+	--color-theme-accent: #a00404;
+	--color-theme-gray-200: #dddddd;
+	--color-theme-gray-600: #707070;
+	--color-theme-gray-800: #333333;
+	--color-theme-alt-200: #ffb994;
+	--color-theme-alt-600: #36b5a7;
+	--color-theme-alt-800: #005d67;
+	--color-theme-alt-900: #433a3f;
+	--font-header: "IM Fell DW Pica", serif;
+	--font-header-sc: "IM Fell DW Pica SC", serif;
+	--font-primary: Branding, Author, MavenPro, Ubuntu, sans-serif;
+	--font-alternative: "IM Fell Great Primer", serif;
+
+	--color-border-highlight: var(--color-theme-alt-800);
+	--color-border-highlight-alt: var(--color-theme-alt-600);
+	--color-shadow-primary: var(--color-theme-alt-800);
+	--color-shadow-highlight: var(--color-theme-alt-600);
+}
